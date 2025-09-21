@@ -1,31 +1,3 @@
-# gradio_app.py
-# Gradio frontend for document verification
-
-# import gradio as gr
-# from services.verification import verify_document
-# import os
-
-# def process_file(file):
-#     if file is None:
-#         return "No file uploaded"
-#     file_path = file.name
-#     ext = os.path.splitext(file_path)[-1].lower()
-#     file_type = "pdf" if ext == ".pdf" else "image"
-#     result = verify_document(file_path, file_type)
-#     return result
-
-# with gr.Blocks() as demo:
-#     gr.Markdown("## Document Verification System")
-
-#     with gr.Row():
-#         file_input = gr.File(label="Upload Document", type="filepath")
-#         output = gr.JSON(label="Verification Result")
-
-#     submit_btn = gr.Button("Verify Document")
-#     submit_btn.click(fn=process_file, inputs=file_input, outputs=output)
-
-# if __name__ == "__main__":
-#     demo.launch()
 import gradio as gr
 import requests
 
